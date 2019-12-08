@@ -1,0 +1,327 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: -125px;
+  position: relative;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  height: 125px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.main-container {
+  margin-bottom: 175px;
+}
+
+input::-webkit-input-placeholder { /* WebKit browsers */
+  color: red !important;
+  font-style: italic;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: red !important;
+  font-style: italic;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: red !important;
+  font-style: italic;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: red !important;
+  font-style: italic;
+}
+
+/* valid color */
+.input-field input[type=text].valid {
+  border-bottom: 1px solid #26a69a;
+  box-shadow: 0 1px 0 0 #26a69a;
+}
+.input-field input[type=password].valid {
+  border-bottom: 1px solid #26a69a;
+  box-shadow: 0 1px 0 0 #26a69a;
+}
+.input-field input[type=email].valid {
+  border-bottom: 1px solid #26a69a;
+  box-shadow: 0 1px 0 0 #26a69a;
+}
+.input-field input[type=text].valid:focus {
+  border-bottom: 1px solid #26a69a;
+  box-shadow: 0 1px 0 0 #26a69a;
+}
+.input-field input[type=password].valid:focus {
+  border-bottom: 1px solid #26a69a;
+  box-shadow: 0 1px 0 0 #26a69a;
+}
+.input-field input[type=email].valid:focus {
+  border-bottom: 1px solid #26a69a;
+  box-shadow: 0 1px 0 0 #26a69a;
+}
+
+
+h1 {
+  font-family: 'Permanent Marker', cursive;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+p {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+#calendar-goes-here {
+  margin-bottom: 150px;
+}
+
+#tiles-go-here a {
+  color: red;
+}
+
+#tiles-go-here a:hover {
+  color: #26a69a;
+}
+
+.footer-link {
+  color: #26a69a;
+}
+
+.footer-link:hover {
+  opacity: 0.7;
+}
+
+/*navbar active/hover stuff*/
+.active {
+  background-color: black !important;
+}
+
+.active a {
+  color: white;
+}
+
+#nav-mobile li {
+  color: black !important;
+  border-radius: 8px;
+}
+
+nav .brand-logo {
+  color: black;
+  font-family: 'Permanent Marker', cursive;
+}
+
+nav .brand-logo:hover {
+  color: #26a69a;
+}
+
+nav ul#nav-mobile a:hover {
+  background-color: rgba(0,0,0,0);
+  color: white;
+}
+
+nav #nav-mobile.active a:hover {
+  color: white;
+}
+
+.side-nav li.active a:hover, .side-nav li a:hover, #nav-mobile li:hover, .active:hover {
+  background-color: #26a69a !important;
+  color: white;
+}
+
+nav li a {
+  color: black;
+}
+
+nav #nav-mobile li {
+  margin: 0 5px 0 5px;
+}
+
+nav #mobile.active a {
+  background-color: black;
+}
+
+nav #mobile.active a {
+  background-color: black;
+}
+
+nav {
+  -webkit-box-shadow: none;
+  margin-top: 10px;
+}
+
+.margin-top {
+  margin-top: 35px;
+}
+
+.saved-link {
+  color: red;
+  font-weight: 600;
+}
+
+.saved-link:hover {
+  color: #26a69a;
+}
+
+.side-nav li.active a {
+  background-color: black;
+  color: white;
+}
+
+.sidenav>li>a {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.side-nav li a {
+  background-color: white;
+  color: black;
+}
+
+.right {
+  padding-right: 20px;
+}
+
+nav i {
+  font-size: 30px !important;
+}
+
+#tiles-go-here, #saved-recipes {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 1.5em;
+}
+
+.add-recipe {
+  cursor: pointer;
+  color: red;
+}
+
+.add-recipe:hover {
+  color: #26a69a;
+}
+
+.main-btn {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.multiple {
+  margin-top: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.page-footer {
+  margin-top: 30px;
+}
+
+.recipe, .recipe-that-is-saved {
+  text-align: center;
+  align-self: center;
+}
+
+.recipe img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.recipe-that-is-saved img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.recipe-that-is-saved a {
+  color: red;
+}
+
+.recipe-that-is-saved a:hover {
+  color: #26a69a;
+}
+
+.saved-photo {
+  margin-bottom: 10px;
+}
+
+.slick-prev {
+  left: -50px;
+}
+
+.slick-next {
+  right: -50px;
+}
+
+.slick-next, .slick-prev {
+  width: 50px;
+  height: 50px;
+}
+
+.slick-next:before, .slick-prev:before {
+  color: red;
+  font-size: 40px;
+  width: 50px;
+  height: 50px;
+}
+
+.slick-slide {
+  align-self: center;
+  text-align: center;
+}
+
+.slides {
+  text-align: center;
+  align-self: center;
+  padding: 10px;
+}
+
+.slides img {
+  width: 100%;
+}
+
+.transparent {
+  background-color: RGBA(255, 255, 255, 0.2);
+}
+
+.doodad {
+  cursor: default;
+  color: black;
+}
+
+.doodad:hover {
+  color: #26a69a;
+}
+
+.slide-header {
+  text-align: center;
+}
+
+@media only screen and (max-width: 992px) {
+  #saved-recipes {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  #saved-recipes {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 1fr;
+    margin-top: 1.5em;
+  }
+}
